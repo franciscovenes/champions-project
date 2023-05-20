@@ -1,4 +1,116 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  user-select: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  background: #1b1924;
+  color: white;
+}
+
+#container {
+  box-sizing: border-box;
+  max-width: 320px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+#container img {
+  width: 30%;
+  margin: 10px auto;
+  filter: invert(42%) sepia(98%) saturate(645%) hue-rotate(359deg)
+    brightness(99%) contrast(97%);
+}
+
+#container h1 {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+#container h3 {
+  font-size: 1.25em;
+  margin: 10px 0;
+}
+
+.input-el {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background: #444059;
+  border: none;
+  border-radius: 8px;
+
+  padding: 10px 15px;
+  resize: none;
+  color: #8f8f8f;
+}
+
+#endorsement-textarea {
+  height: 120px;
+}
+
+#input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#to-input,
+#from-input {
+  width: 48%;
+  text-align: center;
+}
+
+#publish-btn {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  padding: 15px;
+  background: #d97706;
+  border: none;
+  border-radius: 8px;
+}
+
+#publish-btn:hover {
+  background: #92400e;
+  color: white;
+}
+
+#endorsements-list {
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.75em;
+}
+
+#endorsements-list li {
+  box-sizing: border-box;
+  background: white;
+  color: #1b1924;
+  text-align: left;
+  padding: 15px;
+}
+
+.bold-p {
+  margin: 0;
+  font-weight: 700;
+}
+
+#endorsements-list li div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.border-test {
+  border: solid 1px green;
 }
